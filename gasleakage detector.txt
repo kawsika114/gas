@@ -1,0 +1,49 @@
+// Include necessary libraries (if any)
+
+// Pin Definitions
+const int gasSensorPin = A0; // Analog pin connected to gas sensor output
+const int buzzerPin = 9;     // Digital pin connected to the buzzer
+const int ledPin = 10;       // Digital pin connected to the LED
+
+// Threshold value (calibrated based on your sensor's datasheet and environment)
+const int gasThreshold = 400;
+
+void setup() {
+  // Initialize Serial Monitor
+  Serial.begin(9600);
+
+  // Configure pins
+  pinMode(gasSensorPin, INPUT);
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
+
+  // Start with buzzer and LED off
+  digitalWrite(buzzerPin, LOW);
+  digitalWrite(ledPin, LOW);
+
+  Serial.println("Gas Leakage Detector Initialized");
+}
+
+void loop() {
+  // Read the gas sensor value
+  int gasLevel = analogRead(gasSensorPin);
+
+  // Print the gas level to Serial Monitor
+  Serial.print("Gas Level: ");
+  Serial.println(gasLevel);
+
+  // Check if gas level exceeds threshold
+  if (gasLevel > gasThreshold) {
+    // Turn on buzzer and LED
+    digitalWrite(buzzerPin, HIGH);
+    digitalWrite(ledPin, HIGH);
+
+    Serial.println("Warning: Gas Leakage Detected!");
+  } else {
+    // Turn off buzzer and LED
+    digitalWrite(buzzerPin, LOW);
+    digitalWrite(ledPin, LOW);
+  }
+
+  // Small delay to stabilize readings
+  delay(500);
