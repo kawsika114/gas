@@ -1,0 +1,21 @@
+The gas spillage causes the wastage of the gas and mainly as its combustible 
+veritable can harm the living thing and other property. To beat such a scene, we 
+are developing a system by using raspberry pi to monitor and control of gas 
+spillage. This will prompt the customer about the spillage and take the security 
+measures in a brief moment. The customer is informed about the gas leakage by 
+using Internet Iot app which is communicated with the help of WiFi modem 
+attached with the raspberry pi.
+Gas Leakage Detection system
+Liquefied Petroleum Gas (LPG) is nowadays commonly used in households, 
+industries and other places as it is very convenient, affordable and ecofriendly
+and less hazardous than its other alternatives. It has proven to be one of the 
+most reliable and easily controlled fuels. It is supplied to various places in 
+cylinders or pipelines.
+Hence, it can leak both as a liquid and as a gas if it is not handled cautiously. 
+Accidents and disasters related to LPG gas leakage are not unheard of. These 
+leakage accidents can cause huge fire and explosion.
+These accidents are caused usually caused due to negligence and careless 
+handling of the gas. If the gas leakage is not detected in the early stages, then it 
+can lead to a very big disaster, as nowadays we can find the supply of LPG gas in 
+almost every household. So, a lot of people have to face danger in case of such 
+catastrophe.
